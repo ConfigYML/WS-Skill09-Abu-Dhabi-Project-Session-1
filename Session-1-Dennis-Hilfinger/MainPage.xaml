@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Session_1_Dennis_Hilfinger.MainPage"
+             Title="Login Page">
+
+    <VerticalStackLayout
+        Padding="30,0"
+        Spacing="25"
+        HeightRequest="300">
+        <HorizontalStackLayout VerticalOptions="Center" HorizontalOptions="Center" Spacing="20"> 
+            <Label Text="Username:"/>
+            <Entry Placeholder="Enter username" x:Name="UsernameInput" WidthRequest="200"/>
+        </HorizontalStackLayout>
+        <HorizontalStackLayout VerticalOptions="Center" HorizontalOptions="Center" Spacing="20">
+            <Label Text="Password:"/>
+            <Entry Placeholder="Enter Password" x:Name="PasswordInput" IsPassword="True" WidthRequest="200"/>
+        </HorizontalStackLayout>
+        <HorizontalStackLayout VerticalOptions="Center" HorizontalOptions="Center" Spacing="50">
+            <Button 
+                x:Name="LoginButton"
+                Text="Login"
+                Style="{StaticResource ButtonBlue}"
+                WidthRequest="150"
+                HeightRequest="50"
+                Clicked="Login"/>
+
+            <Button 
+                Text="Exit"
+                WidthRequest="150"
+                HeightRequest="50"
+                Clicked="Exit"/>
+        </HorizontalStackLayout>
+    </VerticalStackLayout>
+
+</ContentPage>
