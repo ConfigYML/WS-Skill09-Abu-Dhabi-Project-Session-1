@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Session_1_Dennis_Hilfinger.UserPage"
+             Title="UserPage">
+    <VerticalStackLayout Spacing="20">
+        <Button Text="Exit"
+                Clicked="Exit"
+                VerticalOptions="Center"
+                HorizontalOptions="Center"
+                HeightRequest="50"
+                WidthRequest="150"/>
+        <Label x:Name="WelcomeLabel"
+               FontSize="20"
+               HorizontalOptions="Center"
+               VerticalOptions="Center"/>
+        <CollectionView x:Name="LoginGrid"
+                        VerticalOptions="Center"
+                        HorizontalOptions="Center"
+                        HeightRequest="200"
+                        WidthRequest="300">
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    <Grid ColumnDefinitions="*, *, *, *">
+                        <Label Text="{Binding Date}" Grid.Column="0"/>
+                        <Label Text="{Binding LoginTime}" Grid.Column="1"/>
+                        <Label Text="{Binding LogoutTime}" Grid.Column="2"/>
+                        <Label Text="{Binding ErrorMessage}" Grid.Column="3"/>
+                    </Grid>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+    </VerticalStackLayout>
+</ContentPage>

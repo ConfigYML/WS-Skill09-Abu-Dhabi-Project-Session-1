@@ -34,6 +34,7 @@ namespace Session_1_Dennis_Hilfinger
                             await DisplayAlert("Error", "Your account is inactive. Please contact support.", "OK");
                             return;
                         }
+
                         var login = new Login
                         {
                             UserId = user.Id,
@@ -42,6 +43,20 @@ namespace Session_1_Dennis_Hilfinger
                         db.Logins.Add(login);
                         db.SaveChanges();
                         await DisplayAlert("Success", "Login successful!", "OK");
+
+                        ShellNavigationQueryParameters parameters = new ShellNavigationQueryParameters()
+                        {
+                            { "UserId", user.Id.ToString() }
+                        };
+
+                        if (user.RoleId == 1)
+                        {
+                            await Shell.Current.GoToAsync("AdminPage", parameters);
+                        }
+                        else
+                        {
+                            await Shell.Current.GoToAsync("UserPage", parameters);
+                        }
                     }
                     else
                     {

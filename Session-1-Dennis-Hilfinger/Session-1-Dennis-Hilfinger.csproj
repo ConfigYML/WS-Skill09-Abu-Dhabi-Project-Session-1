@@ -68,6 +68,18 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <MauiXaml Update="AdminPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="CrashReportWindow.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="UserPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	</ItemGroup>
+
+	<ItemGroup>
 	  <None Update="Data\UserData.csv">
 	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
 	  </None>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Session_1_Dennis_Hilfinger.CrashReportWindow"
+             Title="CrashReportWindow">
+    <VerticalStackLayout Spacing="20">
+        <Label x:Name="InfoLabel"
+               />
+        <Entry x:Name="InfoInput"
+               Placeholder="Enter crash information here"
+               VerticalOptions="Center" 
+               HorizontalOptions="Center" 
+               WidthRequest="300"/>
+        <Button Text="Send report"
+                Clicked="Submit"/>
+    </VerticalStackLayout>
+</ContentPage>

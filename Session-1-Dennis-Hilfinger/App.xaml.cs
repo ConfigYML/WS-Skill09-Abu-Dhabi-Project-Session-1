@@ -1,4 +1,6 @@
-﻿namespace Session_1_Dennis_Hilfinger
+﻿using Windows.Graphics.Display;
+
+namespace Session_1_Dennis_Hilfinger
 {
     public partial class App : Application
     {
@@ -9,7 +11,9 @@
 
         protected override Window CreateWindow(IActivationState? activationState)
         {
-            return new Window(new AppShell());
+            return new MyWindow(new AppShell());
         }
+
+        
     }
 }
