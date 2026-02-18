@@ -1,0 +1,1 @@
+Erste Einschätzung nach 150 Minuten: Session lief ganz okay. Jedoch musste ich kurz recherchieren, wie ich das Destroying Event des Windows überschreiben kann, damit die Logouts gespeichert  werden. Mit vielleicht 10 Minuten mehr, wäre die UserPage fertig gewesen und ich hätte noch mehr testen können. Admin Page zum aktuellen Punkt nahezu gar nicht bearbeitet.
