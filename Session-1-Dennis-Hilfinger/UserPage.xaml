@@ -3,6 +3,21 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Session_1_Dennis_Hilfinger.UserPage"
              Title="UserPage">
+    
+    <ContentPage.Resources>
+        <Style x:Key="HightlightedLabel" TargetType="Label">
+            <Setter Property="TextColor" Value="#000000"/>
+            <Style.Triggers>
+                <DataTrigger
+                    TargetType="Label"
+                    Binding="{Binding IsCrashEntry}"
+                    Value="True">
+                    <Setter Property="TextColor" Value="#FFFFFF"/>
+                </DataTrigger>
+            </Style.Triggers>
+        </Style>
+    </ContentPage.Resources>
+    
     <VerticalStackLayout Spacing="20">
         <Button Text="Exit"
                 Clicked="Exit"
@@ -35,11 +50,27 @@
             <CollectionView.ItemTemplate>
                 <DataTemplate>
                     <Grid ColumnDefinitions="*, *, *, *, 2*">
-                        <Label Text="{Binding Date}" Grid.Column="0"/>
-                        <Label Text="{Binding LoginTime}" Grid.Column="1"/>
-                        <Label Text="{Binding LogoutTime}" Grid.Column="2"/>
-                        <Label Text="{Binding TimeSpent}" Grid.Column="3"/>
-                        <Label Text="{Binding ErrorMessage}" Grid.Column="4"/>
+
+                        <Grid.Style>
+                            <Style TargetType="Grid">
+                                <Style.Triggers>
+
+                                    <DataTrigger 
+                                        TargetType="Grid"
+                                        Binding="{Binding IsCrashEntry}"
+                                        Value="True">
+                                        <Setter Property="BackgroundColor" Value="{StaticResource PrimaryBlue}"/>
+                                    </DataTrigger>
+
+                                </Style.Triggers>
+                            </Style>
+                        </Grid.Style>
+
+                        <Label Text="{Binding Date}" Style="{StaticResource HightlightedLabel}" Grid.Column="0"/>
+                        <Label Text="{Binding LoginTime}" Style="{StaticResource HightlightedLabel}" Grid.Column="1"/>
+                        <Label Text="{Binding LogoutTime}" Style="{StaticResource HightlightedLabel}" Grid.Column="2"/>
+                        <Label Text="{Binding TimeSpent}" Style="{StaticResource HightlightedLabel}" Grid.Column="3"/>
+                        <Label Text="{Binding ErrorMessage}" Style="{StaticResource HightlightedLabel}" Grid.Column="4"/>
                     </Grid>
                 </DataTemplate>
             </CollectionView.ItemTemplate>

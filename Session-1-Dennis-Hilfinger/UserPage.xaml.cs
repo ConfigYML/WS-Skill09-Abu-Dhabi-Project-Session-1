@@ -101,6 +101,6 @@ public partial class UserPage : ContentPage, IQueryAttributable
 		public TimeOnly? LogoutTime { get; set; }
 		public string TimeSpent { get; set; }
 		public string ErrorMessage { get; set; }
-		//public SolidColorBrush BackgroundColor => LogoutTime == null ? new SolidColorBrush(Colors.Red) : new SolidColorBrush(Colors.Transparent);
+		public bool IsCrashEntry => !LogoutTime.HasValue;
     }
 }

@@ -3,16 +3,12 @@
   "WorkspaceRootPath": "C:\\2_WorldSkills\\Training\\AbuDhabi_2017\\WS-Skill09-Abu-Dhabi-Project-Session-1\\Session-1-Dennis-Hilfinger\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{5CE304EF-AFDC-465C-8FC1-1483B46A778F}|Session-1-Dennis-Hilfinger.csproj|c:\\2_worldskills\\training\\abudhabi_2017\\ws-skill09-abu-dhabi-project-session-1\\session-1-dennis-hilfinger\\addedituserpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5CE304EF-AFDC-465C-8FC1-1483B46A778F}|Session-1-Dennis-Hilfinger.csproj|solutionrelative:addedituserpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5CE304EF-AFDC-465C-8FC1-1483B46A778F}|Session-1-Dennis-Hilfinger.csproj|c:\\2_worldskills\\training\\abudhabi_2017\\ws-skill09-abu-dhabi-project-session-1\\session-1-dennis-hilfinger\\userpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{5CE304EF-AFDC-465C-8FC1-1483B46A778F}|Session-1-Dennis-Hilfinger.csproj|solutionrelative:userpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5CE304EF-AFDC-465C-8FC1-1483B46A778F}|Session-1-Dennis-Hilfinger.csproj|c:\\2_worldskills\\training\\abudhabi_2017\\ws-skill09-abu-dhabi-project-session-1\\session-1-dennis-hilfinger\\addedituserpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{5CE304EF-AFDC-465C-8FC1-1483B46A778F}|Session-1-Dennis-Hilfinger.csproj|solutionrelative:addedituserpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5CE304EF-AFDC-465C-8FC1-1483B46A778F}|Session-1-Dennis-Hilfinger.csproj|c:\\2_worldskills\\training\\abudhabi_2017\\ws-skill09-abu-dhabi-project-session-1\\session-1-dennis-hilfinger\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5CE304EF-AFDC-465C-8FC1-1483B46A778F}|Session-1-Dennis-Hilfinger.csproj|solutionrelative:mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5CE304EF-AFDC-465C-8FC1-1483B46A778F}|Session-1-Dennis-Hilfinger.csproj|c:\\2_worldskills\\training\\abudhabi_2017\\ws-skill09-abu-dhabi-project-session-1\\session-1-dennis-hilfinger\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{5CE304EF-AFDC-465C-8FC1-1483B46A778F}|Session-1-Dennis-Hilfinger.csproj|solutionrelative:app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5CE304EF-AFDC-465C-8FC1-1483B46A778F}|Session-1-Dennis-Hilfinger.csproj|c:\\2_worldskills\\training\\abudhabi_2017\\ws-skill09-abu-dhabi-project-session-1\\session-1-dennis-hilfinger\\userpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -27,8 +23,8 @@
       "RelativeMoniker": "D:0:0:{5CE304EF-AFDC-465C-8FC1-1483B46A778F}|Session-1-Dennis-Hilfinger.csproj|solutionrelative:adminpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5CE304EF-AFDC-465C-8FC1-1483B46A778F}|Session-1-Dennis-Hilfinger.csproj|c:\\2_worldskills\\training\\abudhabi_2017\\ws-skill09-abu-dhabi-project-session-1\\session-1-dennis-hilfinger\\userpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{5CE304EF-AFDC-465C-8FC1-1483B46A778F}|Session-1-Dennis-Hilfinger.csproj|solutionrelative:userpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{5CE304EF-AFDC-465C-8FC1-1483B46A778F}|Session-1-Dennis-Hilfinger.csproj|c:\\2_worldskills\\training\\abudhabi_2017\\ws-skill09-abu-dhabi-project-session-1\\session-1-dennis-hilfinger\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5CE304EF-AFDC-465C-8FC1-1483B46A778F}|Session-1-Dennis-Hilfinger.csproj|solutionrelative:mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,7 +34,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
@@ -46,59 +42,46 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "AddEditUserPage.xaml.cs",
-              "DocumentMoniker": "C:\\2_WorldSkills\\Training\\AbuDhabi_2017\\WS-Skill09-Abu-Dhabi-Project-Session-1\\Session-1-Dennis-Hilfinger\\AddEditUserPage.xaml.cs",
-              "RelativeDocumentMoniker": "AddEditUserPage.xaml.cs",
-              "ToolTip": "C:\\2_WorldSkills\\Training\\AbuDhabi_2017\\WS-Skill09-Abu-Dhabi-Project-Session-1\\Session-1-Dennis-Hilfinger\\AddEditUserPage.xaml.cs",
-              "RelativeToolTip": "AddEditUserPage.xaml.cs",
-              "ViewState": "AgIAAFoAAAAAAAAAAAAYwG4AAABHAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-19T17:44:06.745Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "AddEditUserPage.xaml",
-              "DocumentMoniker": "C:\\2_WorldSkills\\Training\\AbuDhabi_2017\\WS-Skill09-Abu-Dhabi-Project-Session-1\\Session-1-Dennis-Hilfinger\\AddEditUserPage.xaml",
-              "RelativeDocumentMoniker": "AddEditUserPage.xaml",
-              "ToolTip": "C:\\2_WorldSkills\\Training\\AbuDhabi_2017\\WS-Skill09-Abu-Dhabi-Project-Session-1\\Session-1-Dennis-Hilfinger\\AddEditUserPage.xaml",
-              "RelativeToolTip": "AddEditUserPage.xaml",
-              "ViewState": "AgIAAB4AAAAAAAAAAAAAADUAAAAfAAAAAAAAAA==",
+              "Title": "App.xaml",
+              "DocumentMoniker": "C:\\2_WorldSkills\\Training\\AbuDhabi_2017\\WS-Skill09-Abu-Dhabi-Project-Session-1\\Session-1-Dennis-Hilfinger\\App.xaml",
+              "RelativeDocumentMoniker": "App.xaml",
+              "ToolTip": "C:\\2_WorldSkills\\Training\\AbuDhabi_2017\\WS-Skill09-Abu-Dhabi-Project-Session-1\\Session-1-Dennis-Hilfinger\\App.xaml",
+              "RelativeToolTip": "App.xaml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAABIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-02-19T17:38:22.967Z",
+              "WhenOpened": "2026-02-19T19:06:21.681Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 4,
               "Title": "AdminPage.xaml.cs",
               "DocumentMoniker": "C:\\2_WorldSkills\\Training\\AbuDhabi_2017\\WS-Skill09-Abu-Dhabi-Project-Session-1\\Session-1-Dennis-Hilfinger\\AdminPage.xaml.cs",
               "RelativeDocumentMoniker": "AdminPage.xaml.cs",
               "ToolTip": "C:\\2_WorldSkills\\Training\\AbuDhabi_2017\\WS-Skill09-Abu-Dhabi-Project-Session-1\\Session-1-Dennis-Hilfinger\\AdminPage.xaml.cs",
               "RelativeToolTip": "AdminPage.xaml.cs",
-              "ViewState": "AgIAAFcAAAAAAAAAAAAiwGkAAAAIAAAAAAAAAA==",
+              "ViewState": "AgIAAJAAAAAAAAAAAAAkwKYAAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-02-18T17:26:58.066Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 3,
               "Title": "AdminPage.xaml",
               "DocumentMoniker": "C:\\2_WorldSkills\\Training\\AbuDhabi_2017\\WS-Skill09-Abu-Dhabi-Project-Session-1\\Session-1-Dennis-Hilfinger\\AdminPage.xaml",
               "RelativeDocumentMoniker": "AdminPage.xaml",
               "ToolTip": "C:\\2_WorldSkills\\Training\\AbuDhabi_2017\\WS-Skill09-Abu-Dhabi-Project-Session-1\\Session-1-Dennis-Hilfinger\\AdminPage.xaml",
               "RelativeToolTip": "AdminPage.xaml",
-              "ViewState": "AgIAABUAAAAAAAAAAAAiwDIAAABGAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2026-02-18T16:29:45.132Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
               "Title": "MainPage.xaml.cs",
               "DocumentMoniker": "C:\\2_WorldSkills\\Training\\AbuDhabi_2017\\WS-Skill09-Abu-Dhabi-Project-Session-1\\Session-1-Dennis-Hilfinger\\MainPage.xaml.cs",
               "RelativeDocumentMoniker": "MainPage.xaml.cs",
@@ -111,28 +94,29 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "UserPage.xaml.cs",
               "DocumentMoniker": "C:\\2_WorldSkills\\Training\\AbuDhabi_2017\\WS-Skill09-Abu-Dhabi-Project-Session-1\\Session-1-Dennis-Hilfinger\\UserPage.xaml.cs",
               "RelativeDocumentMoniker": "UserPage.xaml.cs",
               "ToolTip": "C:\\2_WorldSkills\\Training\\AbuDhabi_2017\\WS-Skill09-Abu-Dhabi-Project-Session-1\\Session-1-Dennis-Hilfinger\\UserPage.xaml.cs",
               "RelativeToolTip": "UserPage.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAmAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFEAAAADAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-02-18T16:37:02.164Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 0,
               "Title": "UserPage.xaml",
               "DocumentMoniker": "C:\\2_WorldSkills\\Training\\AbuDhabi_2017\\WS-Skill09-Abu-Dhabi-Project-Session-1\\Session-1-Dennis-Hilfinger\\UserPage.xaml",
               "RelativeDocumentMoniker": "UserPage.xaml",
               "ToolTip": "C:\\2_WorldSkills\\Training\\AbuDhabi_2017\\WS-Skill09-Abu-Dhabi-Project-Session-1\\Session-1-Dennis-Hilfinger\\UserPage.xaml",
               "RelativeToolTip": "UserPage.xaml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAApAAAAAAAAAA==",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAAAEsAAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-02-18T16:29:54.663Z"
+              "WhenOpened": "2026-02-18T16:29:54.663Z",
+              "EditorCaption": ""
             }
           ]
         },

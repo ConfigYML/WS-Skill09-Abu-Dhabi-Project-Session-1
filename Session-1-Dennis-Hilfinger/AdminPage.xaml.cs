@@ -16,7 +16,7 @@ public partial class AdminPage : ContentPage, IQueryAttributable
     }
     public void ApplyQueryAttributes(IDictionary<string, object> query)
     {
-        UserId = int.Parse((string)query["UserId"]);
+        UserId = int.Parse(query["UserId"].ToString());
         FillPicker();
         LoadUsers(null, null);
     }
@@ -100,7 +100,8 @@ public partial class AdminPage : ContentPage, IQueryAttributable
     {
         ShellNavigationQueryParameters parameters = new ShellNavigationQueryParameters()
         {
-            { "UserToEdit", null }
+            { "UserToEdit", null },
+            { "UserId", UserId }
         };
         await Shell.Current.GoToAsync("AddEditUserPage", parameters);
     }   
@@ -127,7 +128,8 @@ public partial class AdminPage : ContentPage, IQueryAttributable
             UserDTO user = UserGrid.SelectedItem as UserDTO;
             ShellNavigationQueryParameters parameters = new ShellNavigationQueryParameters()
             {
-                { "UserToEdit", user.Email }
+                { "UserToEdit", user.Email },
+                { "UserId", UserId }
             };
             await Shell.Current.GoToAsync("AddEditUserPage", parameters);
         }

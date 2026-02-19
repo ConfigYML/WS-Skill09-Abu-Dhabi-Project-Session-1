@@ -1,10 +1,12 @@
 
 using Microsoft.EntityFrameworkCore;
+using Windows.Security.Authentication.OnlineId;
 
 namespace Session_1_Dennis_Hilfinger;
 
 public partial class AddEditUserPage : ContentPage, IQueryAttributable
 {
+    private int UserId = 0;
     private bool IsEditMode = false;
     public AddEditUserPage()
     {
@@ -13,6 +15,7 @@ public partial class AddEditUserPage : ContentPage, IQueryAttributable
 
     public void ApplyQueryAttributes(IDictionary<string, object> query)
     {
+        UserId = int.Parse(query["UserId"].ToString());
         using (var db = new AirlineContext())
         {
             IsEditMode = true;
@@ -126,13 +129,21 @@ public partial class AddEditUserPage : ContentPage, IQueryAttributable
                 await DisplayAlert("Success", "User added successfully!", "OK");
                 
             }
-            //Navigate back
+            ShellNavigationQueryParameters parameters = new ShellNavigationQueryParameters()
+            {
+                { "UserId", UserId }
+            };
+            await Shell.Current.GoToAsync("..", parameters);
         }
     }
 
     private async void Cancel(object sender, EventArgs e)
     {
-        await Navigation.PopModalAsync();
+        ShellNavigationQueryParameters parameters = new ShellNavigationQueryParameters()
+        {
+            { "UserId", UserId }
+        };
+        await Shell.Current.GoToAsync("..", parameters);
     }
 
     private string GetMd5Password(string password)

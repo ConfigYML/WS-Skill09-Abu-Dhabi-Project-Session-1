@@ -9,3 +9,6 @@ To be able to start the application please make sure that MSSQL local database i
 
 # Starting the application
 For starting the application navigate to the Executable/net9.0-windows10.0.19041.0/win10-x64 folder and double-click the _runMe.exe file.
+
+# Users
+- User with email "dennis@g.com" and password '123' was added
