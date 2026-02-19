@@ -5,11 +5,71 @@
              Title="AdminPage">
     <VerticalStackLayout Spacing="20">
 
-        <Button Text="Exit"
+        <HorizontalStackLayout Spacing="50" HorizontalOptions="Center">
+            <Button Text="Exit"
                 Clicked="Exit"
                 VerticalOptions="Center"
                 HorizontalOptions="Center"
                 HeightRequest="50"
                 WidthRequest="150"/>
+            <Button Text="Add User"
+                Clicked="AddUser"
+                VerticalOptions="Center"
+                HorizontalOptions="Center"
+                HeightRequest="50"
+                WidthRequest="150"/>
+        </HorizontalStackLayout>
+
+        <Picker Title="Offices"
+                x:Name="OfficePicker"
+                VerticalOptions="Center"
+                HorizontalOptions="Center"
+                SelectedIndexChanged="LoadUsers"/>
+        <CollectionView x:Name="UserGrid"
+                VerticalOptions="Center"
+                HorizontalOptions="Center"
+                HeightRequest="300"
+                WidthRequest="900"
+                SelectionMode="Single"
+                SelectionChanged="UserSelected">
+            <CollectionView.Header>
+                <Grid ColumnDefinitions="*, *, .5*, *, 2*, *">
+                    <Label Text="Name" Grid.Column="0" FontAttributes="Bold"/>
+                    <Label Text="Last Name" Grid.Column="1" FontAttributes="Bold"/>
+                    <Label Text="Age" Grid.Column="2" FontAttributes="Bold"/>
+                    <Label Text="Role" Grid.Column="3" FontAttributes="Bold"/>
+                    <Label Text="Email address" Grid.Column="4" FontAttributes="Bold"/>
+                    <Label Text="Office" Grid.Column="5" FontAttributes="Bold"/>
+                </Grid>
+            </CollectionView.Header>
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    <Grid ColumnDefinitions="*, *, .5*, *, 2*, *">
+                        <Label Text="{Binding Name}" Grid.Column="0"/>
+                        <Label Text="{Binding Lastname}" Grid.Column="1"/>
+                        <Label Text="{Binding Age}" Grid.Column="2"/>
+                        <Label Text="{Binding Role}" Grid.Column="3"/>
+                        <Label Text="{Binding Email}" Grid.Column="4"/>
+                        <Label Text="{Binding Office}" Grid.Column="5"/>
+                    </Grid>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+
+        <HorizontalStackLayout Spacing="100" HorizontalOptions="Center">
+            <Button Text="Change Role"
+                    x:Name="RoleButton"
+                    Clicked="ChangeRole"
+                    HeightRequest="50"
+                    WidthRequest="150"
+                    IsEnabled="False"/>
+            <Button Text="Suspend/Unsuspend account"
+                    x:Name="SuspensionButton"
+                    Clicked="ChangeActive"
+                    HeightRequest="50"
+                    WidthRequest="250"
+                    IsEnabled="False"/>
+        </HorizontalStackLayout>
+
     </VerticalStackLayout>
 </ContentPage>

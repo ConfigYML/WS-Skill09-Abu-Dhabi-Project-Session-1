@@ -14,18 +14,32 @@
                FontSize="20"
                HorizontalOptions="Center"
                VerticalOptions="Center"/>
+        <Label x:Name="InfoLabel"
+               FontSize="20"
+               HorizontalOptions="Center"
+               VerticalOptions="Center"/>
         <CollectionView x:Name="LoginGrid"
                         VerticalOptions="Center"
                         HorizontalOptions="Center"
-                        HeightRequest="200"
-                        WidthRequest="300">
+                        HeightRequest="400"
+                        WidthRequest="700">
+            <CollectionView.Header>
+                <Grid ColumnDefinitions="*, *, *, *, 2*">
+                    <Label Text="Date" Grid.Column="0" FontAttributes="Bold"/>
+                    <Label Text="Login Time" Grid.Column="1" FontAttributes="Bold"/>
+                    <Label Text="Logout Time" Grid.Column="2" FontAttributes="Bold"/>
+                    <Label Text="Time Spent" Grid.Column="3" FontAttributes="Bold"/>
+                    <Label Text="Error Message" Grid.Column="4" FontAttributes="Bold"/>
+                </Grid>
+            </CollectionView.Header>
             <CollectionView.ItemTemplate>
                 <DataTemplate>
-                    <Grid ColumnDefinitions="*, *, *, *">
+                    <Grid ColumnDefinitions="*, *, *, *, 2*">
                         <Label Text="{Binding Date}" Grid.Column="0"/>
                         <Label Text="{Binding LoginTime}" Grid.Column="1"/>
                         <Label Text="{Binding LogoutTime}" Grid.Column="2"/>
-                        <Label Text="{Binding ErrorMessage}" Grid.Column="3"/>
+                        <Label Text="{Binding TimeSpent}" Grid.Column="3"/>
+                        <Label Text="{Binding ErrorMessage}" Grid.Column="4"/>
                     </Grid>
                 </DataTemplate>
             </CollectionView.ItemTemplate>

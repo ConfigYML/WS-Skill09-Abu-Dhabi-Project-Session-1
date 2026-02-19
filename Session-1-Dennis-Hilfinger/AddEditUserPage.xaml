@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Session_1_Dennis_Hilfinger.AddEditUserPage"
+             Title="AddEditUserPage">
+    <VerticalStackLayout Spacing="10">
+
+        <HorizontalStackLayout HorizontalOptions="Center"
+                               VerticalOptions="Center"
+                               Spacing="25"
+                               Margin="0, 50, 0, 0">
+            <Label Text="Email address:"
+                   VerticalOptions="Center"/>
+            <Entry 
+                x:Name="EmailEntry"
+                VerticalOptions="Center"
+                WidthRequest="150"/>
+        </HorizontalStackLayout>
+
+        <HorizontalStackLayout HorizontalOptions="Center"
+                       VerticalOptions="Center"
+                       Spacing="25">
+            <Label Text="First name:"
+           VerticalOptions="Center"/>
+            <Entry 
+                x:Name="NameEntry"
+                VerticalOptions="Center"
+                WidthRequest="150"/>
+        </HorizontalStackLayout>
+
+        <HorizontalStackLayout HorizontalOptions="Center"
+                       VerticalOptions="Center"
+                       Spacing="25">
+            <Label Text="Last name:"
+           VerticalOptions="Center"/>
+            <Entry 
+                x:Name="LastNameEntry"
+                VerticalOptions="Center"
+                WidthRequest="150"/>
+        </HorizontalStackLayout>
+
+        <HorizontalStackLayout 
+            HorizontalOptions="Center"
+            VerticalOptions="Center"
+            Spacing="25">
+            <Label Text="Office"
+           VerticalOptions="Center"/>
+            <Picker 
+                x:Name="OfficePicker"
+                VerticalOptions="Center"
+                WidthRequest="150"/>
+        </HorizontalStackLayout>
+
+        <HorizontalStackLayout 
+            HorizontalOptions="Center"
+            VerticalOptions="Center"
+            Spacing="25"
+            x:Name="BirthdateLayout">
+            <Label Text="Birthdate:"
+           VerticalOptions="Center"/>
+            <DatePicker x:Name="BirthdatePicker"/>
+        </HorizontalStackLayout>
+
+        <HorizontalStackLayout 
+            HorizontalOptions="Center"
+            VerticalOptions="Center"
+            Spacing="25"
+            x:Name="PasswordLayout">
+            <Label Text="Password:"
+   VerticalOptions="Center"/>
+            <Entry
+                x:Name="PasswordEntry" 
+                IsPassword="True"
+                VerticalOptions="Center"
+                WidthRequest="150"/>
+        </HorizontalStackLayout>
+
+        <HorizontalStackLayout 
+            HorizontalOptions="Center"
+            VerticalOptions="Center"
+            Spacing="25"
+            x:Name="RoleLayout">
+            <Label Text="Role:"
+                VerticalOptions="Center"/>
+            <RadioButton x:Name="AdminRadioButton"
+                         Content="Admin"
+                         GroupName="Role"/>
+            <RadioButton x:Name="UserRadioButton"
+                         Content="User"
+                         GroupName="Role"/>
+        </HorizontalStackLayout>
+
+        <HorizontalStackLayout HorizontalOptions="Center"
+               VerticalOptions="Center"
+               Spacing="25">
+            <Button Text="Save"
+                    x:Name="SaveBtn"
+                    Clicked="SaveUser"
+                    WidthRequest="100"/>
+            <Button Text="Cancel"
+                    Clicked="Cancel"
+                    WidthRequest="100"/>
+        </HorizontalStackLayout>
+    </VerticalStackLayout>
+</ContentPage>
